@@ -19,3 +19,4 @@ qBot is a very simple AI assisstant that will help you get through your day with
 * Made for Mobile and for the Web.
   * Mobile restrictions: No audio playback, no speech recognition.
   
+![](http://i.imgur.com/OdKNJNJ.png)
