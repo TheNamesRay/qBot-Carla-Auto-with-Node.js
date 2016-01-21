@@ -1,2 +1,28 @@
-# qBot
-Lab-rat for testing new AI techniques with HTML5 and Node.js
+![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1") qBot
+====
+> **Note:** This is for AI testing purposes only, and is still being developed privately
+
+qBot is a very simple AI assisstant that will help you get through your day with ease. 
+
+### Beta features ###
+
+* No-SQL Memory of user's details.
+  * Saves data like name, age, location, and last visit time.
+* Real-life like chatting skills.
+  * Responds to normal questions (and not so normal ones)
+  * Ability to handle multi-part conversations (1. "How are you?" 2. "Fine" 3. "I'm glad to hear that!")
+  * Voiced responses (only on Chrome and Firefox)
+  * Ability to recognize speech (only on Chrome)
+* Automatic AI improvement.
+  * Calculates new question => answer pairs by analyzing the user's chat.
+* Made with ES6 and the newest web technologies.
+* Made for Mobile and for the Web.
+  * Mobile restrictions: No audio playback, no speech recognition.
+  
+### Using (server-side) ###
+* Socket.io
+* md5
+
+### Using (client-side) ###
+* Socket.io
+* Annyang
