@@ -1,4 +1,4 @@
-![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1") qBot
+![alt text](http://s17.postimg.org/whib9du0b/q_Bot_logo.png "qBot Logo") qBot
 ====
 > **Note:** This is for AI testing purposes only, and is still being developed privately
 
@@ -19,10 +19,3 @@ qBot is a very simple AI assisstant that will help you get through your day with
 * Made for Mobile and for the Web.
   * Mobile restrictions: No audio playback, no speech recognition.
   
-### Using (server-side) ###
-* Socket.io
-* md5
-
-### Using (client-side) ###
-* Socket.io
-* Annyang
