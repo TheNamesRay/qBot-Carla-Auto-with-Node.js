@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>
+		Carla Auto &ndash; Powered by qBot Software
+		</title>
+		<link rel="icon" href="qBot__images/qBot__favicon.ico">
+		<link rel="manifest" href="manifest.json">
+		<link rel="stylesheet" href="qBot__styles/qBot__chatInterface.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!--<meta name="theme-color" content="#0077DD">-->
+		<link rel="stylesheet" media="screen and (max-width: 450px)" href="qBot__styles/qBot__chatInterface__mobile.css" />
+	</head>
+	<body>
+		<div id="qBot__mainContainer">
+			<div id="qBot__botId">
+				<img src="qBot__images/qBot__logo.png">
+				<span>
+					Carla <small>Auto</small>
+				</span>
+			</div>
+			<div id="qBot__thread"></div>
+			<div id="qBot__textBox">
+				<i class="fa fa-send" onclick="Bot.send()"></i>
+				<form id="qBot__form" autocomplete="off">
+					<input type="text" id="qBot__textBoxInput" placeholder="Say something!">
+				</form>
+				<div id="qBot__poweredBy">
+					<a href="#">powered by qBot software</a> | <a href="#" id="qBot__fluidMode" onclick="Bot.toFluidMode();">turn to fluid mode (beta)</a></div>
+				</div>
+			</div>
+			<script src="qBot__scripts/vendor/socket.io/socket.io-1.4.3.js" type="text/javascript"></script>
+			<script src="//cdnjs.cloudflare.com/ajax/libs/annyang/2.1.0/annyang.min.js"></script>
+			<script src="qBot__scripts/qBot__client.js" type="text/javascript"></script>
+			<script>
+				var Bot = new qBot;
+				Bot.connect('http://192.168.2.3', 3000);
+				if (annyang) {
+				    var commands = {
+				        '*anything': function (anything) {
+				        	Bot.speech = anything;
+				    	}
+				    };
+				    annyang.addCallback('end', function () {
+				        Bot.input.value = Bot.speech;
+				        Bot.send();
+				    });
+				    annyang.addCommands(commands);
+				}
+			</script>
+		</body>
+	</html>

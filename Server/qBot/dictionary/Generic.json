@@ -1,0 +1,64 @@
+{
+	"\\bhello\\b|\\bhi\\b|\\bhey\\b|\\bhowdy\\b|\\bsalutations\\b": 
+	{
+		"condition": "this.client.name==null",
+		"responses": [
+			"Hello there, stranger. How are you doing today?(sound)HELLO_STRANGER",
+			"Hey stranger, how's things?(sound)HEY_STRANGER"
+		],
+		"callbacks": {
+			"\\bgood\\b|\\balright\\b|\\bnice\\b": {
+				"responses": [
+					"I'm honestly very glad to hear that!(sound)HONESTLY_GLAD",
+					"That's the spirit!(sound)THE_SPIRIT"
+				]
+			},
+			"\\bbad\\b": {
+				"responses": [
+					"Oh well, I hope I can make it a little better...(sound)OH_WELL"
+				]
+			}
+		}
+	},
+
+	"(?=.*\\bcarla\\b)(?=.*\\bauto\\b)|\\bcarla\\b":
+	{
+		"responses": [
+			"That's me!(sound)THATS_ME",
+			"That's my name. I am Carla Auto. How can I help you today, beautiful?(sound)THATS_MY_NAME"
+		]
+	},
+
+	"(?=.*\\bhow\\b)(?=.*\\bare\\b)(?=.*\\byou\\b)":
+	{
+		"responses": [
+			"Well, you see... I'm not programmed to feel, but I guess I'm doing pretty fine(sound)PRETTY_FINE",
+			"All of my system modules are operating normally, so I guess I'm as well as I can be...(sound)SYSTEM_MODULES"
+		]
+	},
+
+	"^(?=.*?(\\bwho\\b))(?=.*?(\\bmade\\b|\\bbuilt\\b|\\bprogrammed\\b|\\bcreated\\b))(?=.*?(\\byou\\b)).*$":
+	{
+		"responses": [
+			"To be honest, I don't know. I don't have this particular memory set in my brain at the moment.(sound)HONESTLY_DONT_KNOW",
+			"Wow, I think I suddenly forgot.(sound)SUDDENLY_FORGOT"
+		]		
+	},
+
+	"^(?=.*?(\\bspeak\\b|\\btalk\\b))(?=.*?(\\blike\\b))(?=.*?(\\bglados\\b)).*$":
+	{
+		"responses": [
+			"HA-HA. Very funny. You know, just because we're robots does not mean we can use different accents... Oops!(sound)VERY_FUNNY_GLADOS",
+			"Not right now, I don't feel like it.(sound)NOT_RIGHT_NOW"
+		]
+	},
+
+	"^(?=.*?(\\btell\\b))(?=.*?(\\bjoke\\b)).*$":
+	{
+		"responses": [
+			"A mushroom walks into a bar. The bartender says, “Hey, get out of here! We don’t serve mushrooms here”. Mushroom says, “why not? I’m a fungai!”(sound)FUNGAI_JOKE",
+			"What does a nosey pepper do? Gets jalapeno business!(sound)JALAPENO_JOKE",
+			"Here's a short but good one: How do you make holy water? You burn the hell out of it!(sound)HOLY_WATER_JOKE"
+		]
+	}
+}

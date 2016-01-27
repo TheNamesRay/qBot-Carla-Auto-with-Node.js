@@ -1,0 +1,13 @@
+#qBot__mainContainer {
+	width:100%!important;
+}
+.qBot__bubble {
+	float: none!important;
+	width: 100%!important;
+	text-align: left!important;
+	display:block!important;
+	max-width:100%!important;
+}
+#qBot__thread {
+	overflow:auto!important;
+}
